@@ -1,0 +1,11 @@
+{
+  "name": "mohsom.github.io",
+  "version": "0.0.1",
+  "devDependencies":{
+    "yo":"latest",
+    "grunt-cli":"latest",
+    "bower":"latest",
+    "generator-angular":"latest",
+    "generator-karma":"latest"
+  }
+}
