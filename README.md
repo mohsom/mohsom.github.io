@@ -1,2 +1,2 @@
-# vskalskyi.github.io
+# mohsom.github.io
 My personal website.
