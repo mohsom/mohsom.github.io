@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "title": "My post",
+      "content":"Hello world!"
+    },
+    {
+      "title": "My post",
+      "content":"Hello world!"
+    }
+  ]
+}

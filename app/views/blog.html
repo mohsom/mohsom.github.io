@@ -6,6 +6,9 @@
     <span><a ng-href="#/about">About</a></span>
   </div>
   <div class="blog-body">
-
+       <div class="post" ng-repeat="post in posts.posts">
+         <h1>{{post.title}}</h1>
+         <p>{{post.content}}</p>
+       </div>
   </div>
 </div>
