@@ -17,6 +17,7 @@ angular.module('personalApp')
     $scope.getPosts=function(){
       $http.get('json/posts.json').success(function(data){
         $scope.posts=data;
+        $scope.posts.posts.reverse();
       });
     };
     $scope.init();
