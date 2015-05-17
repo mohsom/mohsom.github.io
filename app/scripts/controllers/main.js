@@ -9,9 +9,8 @@
  */
 angular.module('personalApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.init = function(){
+      $('title').html('Volodya Skalskyi');
+    };
+    $scope.init();
   });
