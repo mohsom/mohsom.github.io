@@ -327,11 +327,8 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          collapseWhitespace: true,
-          conservativeCollapse: true,
-          collapseBooleanAttributes: true,
-          removeCommentsFromCDATA: true,
-          removeOptionalTags: true
+          removeComments: true,
+          collapseWhitespace: true
         },
         files: [{
           expand: true,
@@ -392,7 +389,12 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '.',
-            src: 'bower_components/fontawesome/scss/*',
+            src: 'bower_components/fontawesome/css/*',
+            dest: '<%= yeoman.dist %>'
+          }, {
+            expand: true,
+            cwd: '.',
+            src: 'bower_components/fontawesome/fonts/*',
             dest: '<%= yeoman.dist %>'
           }]
       },
