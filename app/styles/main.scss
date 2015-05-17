@@ -55,9 +55,13 @@ body {
 
 .main-page {
   display: block;
-  width: 100%;
-  height: 100%;
   position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 610px;
   .welcome {
     display: block;
     width: 100%;
@@ -66,7 +70,6 @@ body {
     font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-top: 50px;
   }
   .personal-info {
     display: block;
