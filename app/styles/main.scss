@@ -27,14 +27,25 @@ body {
   footer{
     display: block;
     width: 100%;
+    margin-top: 10px;
     font-size: 20px;
-    a[ng-href='#/about']{
-      float: right;
-      margin-right: 50px;
-    }
-    a[ng-href='#/blog']{
-      float: left;
-      margin-left: 50px;
+    span {
+      display: block;
+      height: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      a {
+        text-decoration: underline;
+        color: #000000;
+      }
+      a[ng-href='#/about'] {
+        float: right;
+        margin-right: 50px;
+      }
+      a[ng-href='#/blog'] {
+        float: left;
+        margin-left: 50px;
+      }
     }
   }
 }
