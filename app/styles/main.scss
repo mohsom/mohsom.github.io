@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+.float-left {
+  float: left;
+  margin-left: 50px;
+}
+
+.float-right {
+  float: right;
+  margin-right: 50px;
+}
+
 a:target {
   color: inherit;
 }
@@ -24,27 +34,20 @@ body {
   @media(min-width: 700px) {
     animation: animatedBackground 40s linear infinite;
   }
-  footer{
+  footer {
     display: block;
     width: 100%;
     margin-top: 10px;
     font-size: 20px;
     span {
-      display: block;
-      height: 30px;
+      display: inline-block;
       background-color: #ffffff;
       border-radius: 15px;
+      color: #000000;
+      text-align: center;
+      padding: 5px;
       a {
-        text-decoration: underline;
-        color: #000000;
-      }
-      a[ng-href='#/about'] {
-        float: right;
-        margin-right: 50px;
-      }
-      a[ng-href='#/blog'] {
-        float: left;
-        margin-left: 50px;
+        text-decoration: none;
       }
     }
   }
