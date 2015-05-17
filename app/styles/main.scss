@@ -136,8 +136,7 @@ body {
   .nav {
     height: 150px;
     @media (min-width: 500px) {
-      padding-top: 60px;
-      padding-left: 40px;
+      padding: 60px;
     }
     h1{
       text-transform: uppercase;
