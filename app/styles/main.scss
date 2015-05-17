@@ -170,21 +170,29 @@ body {
       padding-bottom: 30px;
       border-bottom: 1px solid #c8c8c8;
       margin-top: 30px;
-      a{
-        display: inline-block;
-        vertical-align: middle;
+      .title-post {
+        display: block;
+        padding-left: 20px;
         cursor: pointer;
-        @media (min-width: 500px) {
-          padding-left:50px;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 30px;
+          opacity: 0;
+          transition: all 0.2s;
         }
-        font-size: 30px;
+        h1 {
+          display: inline-block;
+          vertical-align: middle;
+          @media (min-width: 500px) {
+            padding-left: 10px;
+          }
+        }
       }
-      h1 {
-        display: inline-block;
-        vertical-align: middle;
-        cursor: pointer;
-        @media (min-width: 500px) {
-          padding-left:10px;
+      .title-post:hover{
+        a{
+          opacity: 1;
+          transition: all 0.2s;
         }
       }
       span{
@@ -244,8 +252,11 @@ body {
     p {
       display: block;
       @media (min-width: 500px) {
-        padding: 60px;
+        padding: 20px 60px 60px 60px;
       }
+    }
+    h1{
+      padding-left: 60px;
     }
   }
 }
